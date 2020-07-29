@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+ <head> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" 
+  content="IE=edge"> 
+  
+  <title>V-mail</title> 
+  <meta name="description" content=""> 
+  <meta name="viewport" 
+  content="width=device-width, 
+  initial-scale=1"> 
+  
+  <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css"> 
+  
+  <link rel="stylesheet" href="styles.css"  
+  type="text/css" /> 
+  
+     <style>
+ body {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+         background-size: cover;
+                }
+                
+      </style>
+       
+</head> 
+
+
+<body> 
+  <header>
+    <div class="container">
+  
+    <div class="typewriter"> 
+     <h1 style="color:#ccc6c7; font-size: 35px
+     font-family: monospace;
+     font-style: italic; font-weight: bolder;    
+     text-transform: uppercase; border-color:  
+     #2c3e50;">Voice Based
+    <span style="color:#0aa1ff; font-size:  40px; font-style: italic; font-weight: bolder; text-transform: uppercase; border-color: #2c3e50;">Email</span> </h1> 
+    </div>
+   
+   <p id="page-description">A web app for the  
+   visually challenged </p> 
+    
+   <h2 class="no-support">Sorry, Your Browser  
+   Doesn't Support the Web Speech API. Try 
+   Opening This Demo In Google Chrome. </h2> 
+ 
+    </div>
+</header>
+    
+   
+<section id="info">
+    <div class="input-single"> 
+    
+      <form id="formInput" action="" 
+      method="POST">
+    
+      <input type="email" name="email" 
+      placeholder="From:"  form="formInput"
+      autofocus required>
+     
+      <input type="email" name="email" 
+      placeholder="To:"  form="formInput" 
+      required>
+    
+      <textarea type="text" name="subject"  
+      placeholder="Subject:" rows="2"
+      form="formInput" required> </textarea> 
+     
+     <textarea type="text" name="message" 
+     placeholder="Compose email" 
+     form="formInput" required></textarea>
+   
+     <button type="submit" name="send" 
+     value="send"> Send</button>
+    
+      </form>
+    
+    </div>  
+</section> 
+   
+   
+   
+ <section id="my-email">
+     <div class="container">
+     
+    <h2 style="color:#babcbf; font-size: 1.5rem; text-transform: uppercase; border-color: #2c3e50;">My Email</h2> 
+    
+    </div>
+</section>
+
+
+  
+ <!-- scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+ 
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=5p1BQH0l"></script> 
+  
+     </body>
+     
+</html>
