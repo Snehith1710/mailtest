@@ -1,0 +1,137 @@
+.container {
+     min-width: 300px;
+     text-align:center;
+     vertical-align:top;
+     margin: auto;
+     overflow: hidden;
+}
+	
+p {
+    color: #444;
+}
+	
+	
+h2 {
+	text-align: center;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+}
+		
+	
+/*header*/	
+
+header{ 
+	max-height:500px;
+	background-color: #212426;
+        border-bottom: #0aa1ff 5px solid; 
+        padding-top: 30px;
+}
+  
+
+  
+/*animation*/
+.typewriter h1 {
+	   overflow: hidden; 
+  	   border-right: .15em solid blue; 
+	   white-space: nowrap; 
+           margin: 0 auto;
+           animation: typing 3s steps(17, end),      
+           blinking-cursor .5s step-end 16; 
+} 
+  
+
+@keyframes typing { 
+ 	  from { width: 0 } 
+ 	  to { width: 100% } 
+} 
+ 	
+/* The typewriter cursor effect */ 
+ 
+@keyframes blinking-cursor { 
+	from,to { border-color: transparent; } 
+	50% { border-color: #0aa1ff; }
+}
+
+/* animation finished */
+
+
+#page-description {
+          color:#babcbf;
+	  font-size: 0.7rem;
+	  text-transform: uppercase; 
+	  border-color: #2c3e50;"
+          margin: auto;
+}
+
+
+
+/*section info*/
+
+#info{
+   min-height:180px;
+   background-position:center;
+   background-size: auto;
+   border-bottom: #0aa1ff 7px solid;
+}
+ 
+		
+.input-single{
+	   padding-top: 30px;
+	   padding-left:20px;
+	   width:400px;
+}  
+  
+  
+.input-single textarea[type="text"], input[type="email"]{
+	    width: 80%;
+	    margin-bottom: 20px;
+	    background: transparent;
+	    outline: none;
+	    border-bottom: 1px solid #000;
+	    height: 40px;
+	    color: #000;
+	    font-size: 16px;
+}
+  
+.input-single textarea[name="message"]{
+	  width : 370px;
+	  margin-top: 60px;
+	  border-bottom: 1px solid #000;
+  	  height: 400px;
+  	  color: #000;
+  	  font-size: 16px;
+}
+		
+
+.input-single button {
+   	border : none;
+	margin-top: 15px;
+	outline: none;
+	width: 100%;
+   	margin-bottom: 20px;
+   	background: #0aa1ff;
+        color: #fff;
+   	height: 40px;
+        font-size: 16px;
+   	border-radius: 10px;
+}
+		
+		
+/*bottom part*/
+
+#my-email{
+	background-color: #212426;
+	background-size:cover;
+	padding-top: 40px;
+	max-height: 500px;
+	border-bottom: #0aa1ff 20px solid;
+}
+	
+	
+/* no browser support */	
+.no-support {
+    display: none;
+    font-size: 1.2rem;
+    color: #e64427;
+    margin-top: 35px;
+}
