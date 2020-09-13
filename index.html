@@ -60,19 +60,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.
       <form id="formInput" action="" 
       method="POST">
     
-      <input type="email" name="email" 
+      <input type="email" id="sender" name="email" 
       placeholder="From:"  form="formInput"
       autofocus required>
      
-      <input type="email" name="email" 
+      <input type="email" id="receiver" name="email" 
       placeholder="To:"  form="formInput" 
       required>
     
-      <textarea type="text" name="subject"  
+      <textarea type="text" id="subject" name="subject"  
       placeholder="Subject:" rows="2"
       form="formInput" required> </textarea> 
      
-     <textarea type="text" name="message" 
+     <textarea type="text" id="message" name="message" 
      placeholder="Compose email" 
      form="formInput" required></textarea>
    
@@ -98,8 +98,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.
   
  <!-- scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
- 
-  <script src="https://code.responsivevoice.org/responsivevoice.js?key=5p1BQH0l"></script> 
+  <script src="script.js"></script>
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=5p1BQH0l"></script>
+  <script> responsiveVoice.speak("Please enter your email address");</script> 
   
      </body>
      
