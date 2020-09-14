@@ -36,14 +36,14 @@ header{
   	   border-right: .15em solid blue; 
 	   white-space: nowrap; 
            margin: 0 auto;
-           animation: typing 3s steps(17, end),      
-           blinking-cursor .5s step-end 16; 
+           animation: typing 5s steps(17),      
+           blinking-cursor .5s step-end 17; 
 } 
   
 
 @keyframes typing { 
  	  from { width: 0 } 
- 	  to { width: 100% } 
+ 	  to { width: 50% } 
 } 
  	
 /* The typewriter cursor effect */ 
@@ -89,6 +89,7 @@ header{
 .input-single textarea[type="text"], input[type="email"]{
 	    width: 80%;
 	    margin-bottom: 20px;
+	    text-transform: lowercase;
 	    outline: none;
 	    border-bottom: 1px solid #000;
 	    height: 40px;
@@ -111,16 +112,22 @@ header{
 .input-single button {
 	position: relative;
 	bottom: 135px;
-   	border : none;
+   	border-color: #fff;
 	margin-left: 680px;
 	outline: none;
 	width: 100%;
-	transform: translate(0%,-110%);
+	transform: translate(0%,-140%);
    	background: #0aa1ff;
         color: #fff;
    	height: 40px;
         font-size: 16px;
    	border-radius: 10px;
+}
+
+button:hover{
+	background-color: #000;
+	border-color: #0aa1ff;
+	color:#fff ;
 }
 		
 		
@@ -131,7 +138,7 @@ header{
 	background-size:cover;
 	padding-top: 40px;
 	max-height: 500px;
-	border-bottom: #0aa1ff 25px solid;
+	border-bottom: #0aa1ff 45px solid;
 }
 	
 	
@@ -141,4 +148,16 @@ header{
     font-size: 1.2rem;
     color: #e64427;
     margin-top: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+	.input-single textarea[name="message"]{
+		transform: translate(-165%,-7%);
+		width: 80%;
+		height: 230px;
+	}
+	
+  .input-single button {
+  	transform: translate(50%,0%);
+  }
 }
