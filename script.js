@@ -73,10 +73,12 @@ recognition.onerror = function(event) {
       App buttons and input 
 ------------------------------*/
 
-$('body').on('click', function(e) {
+$('body').on('dblclick', function(e) {
   if (noteContent.length) {
     noteContent += ' ';
   }
+  responsiveVoice.speak('your voice recognition starts now...')
+  responsiveVoice.speak('please enter your email address');
   recognition.start();
 });
 
@@ -174,15 +176,15 @@ notesList.on('click', function(e) {
 ------------------------------*/
 
 function readOutLoud(message) {
-	var speech = new SpeechSynthesisUtterance();
+    var speech = new SpeechSynthesisUtterance();
 
   // Set the text and voice attributes.
-	speech.text = message;
-	speech.volume = 1;
-	speech.rate = 1;
-	speech.pitch = 1;
+    speech.text = message;
+    speech.volume = 1;
+    speech.rate = 1;
+    speech.pitch = 1;
   
-	window.speechSynthesis.speak(speech);
+    window.speechSynthesis.speak(speech);
 }
 
 
