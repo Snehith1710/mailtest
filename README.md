@@ -1,2 +1,2 @@
 # mailtest
-Email for blind
+Email system for visually impaired people
